@@ -1,5 +1,7 @@
-import styles from './page.module.css'
-import Image from 'next/image'
+import styles from './page.module.css';
+import Image from 'next/image';
+
+import Example from '@/components/example';
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
         height={96}
       />
       <p>Welcome to JumboHack, nerds</p>
+      <Example />
     </main>
   )
 }
