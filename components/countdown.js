@@ -53,13 +53,13 @@ export default function Countdown() {
 
   return (
     <div className={styles.timerWrapper}>
-      <div className={styles.timerImage}>
+      <div className={styles.timermage}>
         <Image 
-          src={hourglass} 
-          width = {150} 
-          height = {150}
-          alt="Hourglass" 
+        src={hourglass} 
+        fill
+        alt="Hourglass" 
         />
+        <div>lol</div>
       </div>
       <div className={styles.countdown}>
         <div className={styles.daysSection}>

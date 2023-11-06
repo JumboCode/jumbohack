@@ -1,13 +1,12 @@
 .timerWrapper{
-    display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;
 }
 
-.timerImage{
+.timermage{
     display: flex;
+    position: relative;
     width: 20%;
     height: 100%;
     justify-content: center;
@@ -18,6 +17,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .daysSection{
@@ -53,7 +53,7 @@
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 70px;
+    font-size: 5vw;
     font-weight: bold;
 }
 
@@ -62,5 +62,5 @@
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 3vw;
 }
