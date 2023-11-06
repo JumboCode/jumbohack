@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Image from 'next/image';
 
 import Example from '@/components/example';
+import Card from '@/components/card';
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       />
       <p>Welcome to JumboHack, nerds</p>
       <Example />
+      <Card 
+        card = "Sup Gamers!"
+      />
     </main>
   )
 }
