@@ -1,11 +1,13 @@
-import styles from './page.module.css';
-import Image from 'next/image';
+import styles from "./page.module.css";
+import Image from "next/image";
 
-import Example from '@/components/example';
+import Example from "@/components/example";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Navbar />
       <Image
         src="/jumbohack_full.svg"
         alt="JumboHack Logo"
@@ -15,5 +17,5 @@ export default function Home() {
       <p>Welcome to JumboHack, nerds</p>
       <Example />
     </main>
-  )
+  );
 }

@@ -1,0 +1,35 @@
+.navbarContainer {
+  /* Container position and dimensions */
+  position: fixed;
+  top: 0;
+  height: var(--navbar-height);
+  width: 100%;
+  padding: 0 64px;
+
+  /* Content layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-background-rgb), 1) 0%,
+    rgba(var(--color-background-rgb), 0) 100%
+  );
+
+  .navbarLinks {
+    /* Dimensions */
+    max-width: 600px;
+    width: 100%;
+
+    /* Content layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Text styling */
+    font-family: var(--font-sans);
+    font-size: 20px;
+  }
+}
