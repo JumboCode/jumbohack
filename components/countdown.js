@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./countdown.module.css";
 import Image from 'next/image'
-import hourglass from "../images/hourglass.jpg"
+import hourglass from "../images/funny.gif"
 
 
 export default function Countdown() {
