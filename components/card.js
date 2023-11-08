@@ -10,6 +10,12 @@ export default function Countdown(props) {
   return ( 
     <div>
       <h1>{props.card}</h1>
+      <div className="cardWrapper">
+        <div className="top">
+        </div>
+        <div className="bottom">
+        </div>
+      </div>
     </div>
   )
 
