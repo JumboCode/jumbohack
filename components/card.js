@@ -5,12 +5,16 @@ import styles from "./card.module.css";
 import Image from 'next/image'
 
 
-export default function Countdown(Card) {
+export default function Countdown(props) {
 
-  return (
-    <div className={styles.cardWrapper}>
-        <p>Sup Gamers!</p>
-        <p>[{Card}]</p>
+  return ( 
+    <div>
+      <h1>{props.card}</h1>
     </div>
   )
+
+    // <div className={styles.cardWrapper}>
+    //     <p>Sup Gamers!</p>
+    //     <p>[{Card}]</p>
+    // </div>
 }
