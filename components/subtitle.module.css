@@ -1,0 +1,35 @@
+.text{
+    text-align: center; 
+}
+
+.subtitleText{
+    font-size: 25px; 
+    padding-bottom: 20px; 
+}
+
+#lang{
+    color: #8ECC2B; 
+}
+
+#love{
+    color: #FFD233; 
+}
+
+.tags{
+    color: #F21F6D; 
+}
+
+.htmlTags{
+    text-align: left; 
+    float: left; 
+    padding-top: 20px; 
+}
+
+.apply{
+    padding: 5px 15px; 
+    font-size: 20px; 
+    border: none; 
+    font-weight: bolder; 
+    border-radius: 5px; 
+    background-color: #64DDBB; 
+}
