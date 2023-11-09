@@ -16,7 +16,9 @@ export default function Home() {
       <p>Welcome to JumboHack, nerds</p>
       <Example />
       <Card 
-        card = "Sup Gamers!"
+        cardNum = "4"
+        content = "This is a test to see how much i can fill up this div"
+        title = "Retry Refactor"
       />
     </main>
   )
