@@ -1,0 +1,34 @@
+.heading{
+    color: #64DDBB;
+    font-size: 5vw; 
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden; 
+    padding: .5rem; 
+}
+
+.heading h1{
+    letter-spacing: 0.1rem; 
+    text-align: center; 
+    white-space: nowrap; 
+}
+
+#typed{
+    color: #C6302C; 
+    display: inline-block; 
+}
+
+/* .cursor{
+    display: inline-block; 
+    width: 3px; 
+    background-color: white; 
+    margin-left: 0.1rem; 
+    flex-wrap: nowrap; 
+    animation: blink 1s infinite; 
+} */
+
+/* @keyframes blink {
+    0% {background-color: #ccc;}
+    50% {background-color: transparent;}
+    100% {background-color: #ccc;}
+} */
