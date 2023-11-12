@@ -1,10 +1,11 @@
-.text{
-    text-align: center; 
+.container{
+    width: 90vw; 
 }
 
 .subtitleText{
-    font-size: 25px; 
+    font-size: 50px; 
     padding-bottom: 20px; 
+    text-align: center; 
 }
 
 #lang{
@@ -22,6 +23,7 @@
 .htmlTags{
     text-align: left; 
     float: left; 
+    font-size: 32px; 
     padding-top: 20px; 
 }
 
@@ -32,4 +34,8 @@
     font-weight: bolder; 
     border-radius: 5px; 
     background-color: #64DDBB; 
+}
+
+.application{
+    text-align: center; 
 }

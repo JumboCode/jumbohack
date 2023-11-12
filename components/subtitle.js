@@ -2,12 +2,12 @@ import styles from "./subtitle.module.css";
 
 export default function Subtitle() {
     return (
-        <div className={styles.text}>
+        <div className={styles.container}>
             <div className={styles.subtitleText}>
                 <h3>February 13 2024</h3>
                 <h3>#Love-a-Thon</h3>
             </div>
-            <div>
+            <div className={styles.application}>
                 <a href="https://forms.gle/Q2rVTUSmYRNWgq636" target="_blank"><button className={styles.apply}>Apply</button></a>
             </div>
             <div className={styles.htmlTags}> 
