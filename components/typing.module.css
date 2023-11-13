@@ -1,5 +1,6 @@
 .heading{
-    color: #C6302C; 
+    font-family: var(--font-jumbocode);
+    color: var(--color-red); 
     font-size: 5vw; 
     display: flex; 
     justify-content: center; 
@@ -11,9 +12,9 @@
     letter-spacing: 0.1rem; 
     text-align: center; 
     white-space: nowrap; 
-    color: #64DDBB;
+    color: var(--color-jumbocode-green);
 }
 
 .typed{
-    color: #C6302C; 
+    color: var(--color-red); 
 }
