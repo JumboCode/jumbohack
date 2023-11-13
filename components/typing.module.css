@@ -1,5 +1,5 @@
 .heading{
-    color: #64DDBB;
+    color: #C6302C; 
     font-size: 5vw; 
     display: flex; 
     justify-content: center; 
@@ -11,24 +11,9 @@
     letter-spacing: 0.1rem; 
     text-align: center; 
     white-space: nowrap; 
+    color: #64DDBB;
 }
 
-#typed{
+.typed{
     color: #C6302C; 
-    display: inline-block; 
 }
-
-/* .cursor{
-    display: inline-block; 
-    width: 3px; 
-    background-color: white; 
-    margin-left: 0.1rem; 
-    flex-wrap: nowrap; 
-    animation: blink 1s infinite; 
-} */
-
-/* @keyframes blink {
-    0% {background-color: #ccc;}
-    50% {background-color: transparent;}
-    100% {background-color: #ccc;}
-} */
