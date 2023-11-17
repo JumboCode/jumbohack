@@ -1,0 +1,22 @@
+.heading {
+  font-family: var(--font-jumbocode);
+  color: var(--color-red);
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.heading h1 {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--color-readable);
+}
+
+.typed {
+  color: var(--color-red);
+}

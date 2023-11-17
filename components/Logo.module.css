@@ -1,0 +1,14 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logoContainer span {
+  font-family: var(--font-jumbocode);
+  font-weight: 680;
+  font-size: 24px;
+  .colored {
+    color: var(--color-jumbocode-green);
+  }
+}
