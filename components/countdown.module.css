@@ -1,66 +1,59 @@
-.timerWrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
+.timerWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.timermage{
-    display: flex;
-    position: relative;
-    width: 20%;
-    height: 100%;
-    justify-content: center;
+.countdown {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.countdown{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.daysSection {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.daysSection{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.hoursSection {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.hoursSection{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.minutesSection {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.minutesSection{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.secondsSection {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.secondsSection{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.Number {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
 }
 
-.Number{
-    height: 50%;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-.Text{
-    height: 50%;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 3vw;
+.Text {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3vw;
 }

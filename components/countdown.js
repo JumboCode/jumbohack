@@ -2,9 +2,6 @@
 
 import { useEffect, useState } from "react";
 import styles from "./countdown.module.css";
-import Image from 'next/image'
-import hourglass from "../images/funny.gif"
-
 
 export default function Countdown() {
   const [partyTime, setPartyTime] = useState(false);
@@ -43,24 +40,16 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-//   function CountdownOrMessage({ isPartyTime }) {
-//     if (isPartyTime) {
-//       return <h1>HACKATHON TIME!!!!</h1>;
-//     }
-//     else {}
-//   }
-//<CountdownOrMessage isPartyTime={partyTime}/>
+  //   function CountdownOrMessage({ isPartyTime }) {
+  //     if (isPartyTime) {
+  //       return <h1>HACKATHON TIME!!!!</h1>;
+  //     }
+  //     else {}
+  //   }
+  //<CountdownOrMessage isPartyTime={partyTime}/>
 
   return (
     <div className={styles.timerWrapper}>
-      <div className={styles.timermage}>
-        <Image 
-        src={hourglass} 
-        fill
-        alt="Hourglass" 
-        />
-        <div>lol</div>
-      </div>
       <div className={styles.countdown}>
         <div className={styles.daysSection}>
           <div className={styles.Number}>{days}</div>
@@ -80,5 +69,5 @@ export default function Countdown() {
         </div>
       </div>
     </div>
-  )
+  );
 }
