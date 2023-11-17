@@ -18,7 +18,7 @@ export default function Home() {
       <Card 
         cardNum = "4"
         content = "This is a test to see how much i can fill up this div"
-        title = "Retry Refactor"
+        //title = "Retry Refactor"
       />
     </main>
   )

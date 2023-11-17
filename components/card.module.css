@@ -1,6 +1,6 @@
 .cardWrapper{
     display: flex;
-    background-color: aqua;
+    /*background-color: aqua;*/
     flex-direction: column;
     height: 30vw;
     width: 20vw;
@@ -10,14 +10,14 @@
 }
 
 .top{
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     flex-direction: row;
     height: 10%;
 }
 
 .topNumber{
-    background-color: yellow;
+    /*background-color: yellow;*/
     text-align: center;
     vertical-align: middle;
 }
@@ -28,7 +28,7 @@
 }
 
 .title{
-    background-color: orange;
+    /*background-color: orange;*/
     font-size: 2vw;
     color: white;
     text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .middle{
-    background-color: green;
+    /*background-color: green;*/
     display: flex;
     flex-direction: row;
     height: 80%;
@@ -44,7 +44,7 @@
 }
 
 .left{
-    background-color: pink;
+    /*background-color: pink;*/
     display: flex;
     justify-content: center;
     position: relative;
@@ -59,13 +59,13 @@
 }
 
 .middleMiddle{
-    background-color: purple;
+    /*background-color: purple;*/
     overflow: wrap;
     font-size: 2vw;
 }
 
 .right{
-    background-color: brown;
+    /*background-color: brown;*/
     display: flex;
     justify-content: center;
     position: relative;
@@ -80,7 +80,7 @@
 }
 
 .bottom{
-    background-color: blue;
+    /*background-color: blue;*/
     height:10%;
     text-align: right; 
 }
