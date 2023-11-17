@@ -62,6 +62,8 @@
     /*background-color: purple;*/
     overflow: wrap;
     font-size: 2vw;
+    text-align: center;
+    margin: auto;
 }
 
 .right{
