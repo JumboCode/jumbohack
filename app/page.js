@@ -9,14 +9,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <Image
-        src="/jumbohack_full.svg"
-        alt="JumboHack Logo"
-        width={400}
-        height={96}
-      />
-      <p>Welcome to JumboHack, nerds</p>
-      <Example />
       <Typing />
     </main>
   );
