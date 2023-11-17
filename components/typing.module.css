@@ -1,20 +1,20 @@
-.heading{
-    font-family: var(--font-jumbocode);
-    color: var(--color-red); 
-    font-size: 5vw; 
-    display: flex; 
-    justify-content: center; 
-    overflow: hidden; 
-    padding: .5rem; 
+.heading {
+  font-family: var(--font-jumbocode);
+  color: var(--color-red);
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
-.heading h1{
-    letter-spacing: 0.1rem; 
-    text-align: center; 
-    white-space: nowrap; 
-    color: var(--color-jumbocode-green);
+.heading h1 {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--color-readable);
 }
 
-.typed{
-    color: var(--color-red); 
+.typed {
+  color: var(--color-red);
 }
