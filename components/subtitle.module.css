@@ -1,47 +1,62 @@
-.container{
-    width: 90vw; 
-    font-family: var(--font-mono);
+.container {
+  width: 90vw;
+  font-family: var(--font-mono);
 }
 
-.subtitleText{
-    font-size: 50px; 
-    padding-bottom: 20px; 
-    text-align: center; 
+.subtitleText {
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  .red {
+    color: var(--color-red);
+  }
 }
 
-#lang{
-    color: #8ECC2B; 
+#lang {
+  color: #8ecc2b;
 }
 
-#love{
-    color: #FFD233; 
+#love {
+  color: #ffd233;
 }
 
-.tags{
-    color: #F21F6D; 
+.tags {
+  color: #f21f6d;
 }
 
-.htmlTags{
-    text-align: left; 
-    float: left; 
-    font-size: 32px; 
-    padding-top: 20px; 
+.htmlTags {
+  text-align: left;
+  float: left;
+  font-size: 30px;
+  padding-top: 20px;
 }
 
-.apply{
-    padding: 5px 15px; 
-    font-size: 20px; 
-    border: none; 
-    font-weight: bolder; 
-    border-radius: 5px; 
-    background-color: var(--color-jumbocode-green);
+.apply {
+  padding: 5px 15px;
+  font-size: 20px;
+  border: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  background-color: var(--color-pink);
+  color: black;
+  cursor: pointer;
 }
 
-.apply:hover{
-    background-color: var( --color-white);
-    color: var(--color-jumbocode-green);
+.apply:hover {
+  background-color: var(--color-white);
 }
 
-.application{
-    text-align: center; 
+.application {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .subtitleText {
+    font-size: 32px;
+  }
+
+  .htmlTags {
+    font-size: 18px;
+  }
 }
