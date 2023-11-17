@@ -33,11 +33,11 @@
 }
 
 .apply {
-  padding: 5px 15px;
-  font-size: 20px;
+  padding: 10px 25px;
+  font-size: 25px;
   border: none;
   font-weight: bolder;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--color-pink);
   color: black;
   cursor: pointer;
