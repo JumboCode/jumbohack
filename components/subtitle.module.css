@@ -44,7 +44,7 @@
 }
 
 .apply:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-readable);
 }
 
 .application {
