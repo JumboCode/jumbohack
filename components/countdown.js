@@ -12,24 +12,27 @@ export default function Countdown() {
 
   useEffect(() => {
     const target = new Date("2/17/2024 10:00:00");
-    //const target = new Date("11/4/2023 15:14:00");
 
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const d = Math.max(Math.floor(difference / (1000 * 60 * 60 * 24)), 0);
       setDays(d);
 
-      const h = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      const h = Math.max(
+        Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        0
       );
       setHours(h);
 
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const m = Math.max(
+        Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        0
+      );
       setMinutes(m);
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      const s = Math.max(Math.floor((difference % (1000 * 60)) / 1000), 0);
       setSeconds(s);
 
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
@@ -50,20 +53,21 @@ export default function Countdown() {
 
   return (
     <div className={styles.timerWrapper}>
+      <img src="/hourglass.gif" className={styles.graphic} />
       <div className={styles.countdown}>
-        <div className={styles.daysSection}>
+        <div className={styles.counter}>
           <div className={styles.Number}>{days}</div>
           <div className={styles.Text}>days</div>
         </div>
-        <div className={styles.hoursSection}>
+        <div className={styles.counter}>
           <div className={styles.Number}>{hours}</div>
           <div className={styles.Text}>hours</div>
         </div>
-        <div className={styles.minutesSection}>
+        <div className={styles.counter}>
           <div className={styles.Number}>{minutes}</div>
           <div className={styles.Text}>minutes</div>
         </div>
-        <div className={styles.secondsSection}>
+        <div className={styles.counter}>
           <div className={styles.Number}>{seconds}</div>
           <div className={styles.Text}>seconds</div>
         </div>

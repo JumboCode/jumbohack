@@ -1,60 +1,42 @@
 .timerWrapper {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 100px 0;
+  gap: 64px;
 }
 
 .countdown {
-  width: 80%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  gap: 4vw;
 }
 
-.daysSection {
+.counter {
   width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.hoursSection {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.minutesSection {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.secondsSection {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .Number {
-  height: 50%;
-  width: 100%;
   text-align: center;
-  color: white;
-  font-size: 5vw;
+  font-size: 100px;
   font-weight: bold;
 }
 
 .Text {
-  height: 50%;
-  width: 100%;
   text-align: center;
-  color: white;
-  font-size: 3vw;
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+  .Number {
+    font-size: 12vw;
+  }
+
+  .Text {
+    font-size: 4vw;
+  }
+
+  .graphic {
+    display: none;
+  }
 }
