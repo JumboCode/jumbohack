@@ -32,6 +32,10 @@
   padding-top: 20px;
 }
 
+.indent {
+  padding-left: 36px;
+}
+
 .apply {
   padding: 10px 25px;
   font-size: 25px;
@@ -58,5 +62,9 @@
 
   .htmlTags {
     font-size: 18px;
+  }
+
+  .indent {
+    padding-left: 21px;
   }
 }
