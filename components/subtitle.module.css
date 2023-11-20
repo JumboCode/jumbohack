@@ -29,7 +29,7 @@
   text-align: left;
   float: left;
   font-size: 30px;
-  padding-top: 20px;
+  margin: 64px 0;
 }
 
 .indent {
@@ -53,11 +53,12 @@
 
 .application {
   text-align: center;
+  margin: 16px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .subtitleText {
-    font-size: 32px;
+    font-size: 6vw;
   }
 
   .htmlTags {

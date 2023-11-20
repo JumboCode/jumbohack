@@ -4,11 +4,8 @@ export default function Subtitle() {
   return (
     <div className={styles.container}>
       <div className={styles.subtitleText}>
-        <h3>February 24-25 2024</h3>
+        <h3>Feb 24th-25th 2024</h3>
         <h3>Tufts University</h3>
-        <h3>
-          <span className={styles.red}>#Love-a-Thon</span>
-        </h3>
       </div>
       <div className={styles.application}>
         <a href="https://forms.gle/Q2rVTUSmYRNWgq636" target="_blank">
