@@ -19,16 +19,17 @@ export default function Navbar() {
     </>
   );
 
+  const hamburgerIcon = navMenuOpen ? <>&times;</> : <>&#9776;</>;
+
   return (
     <div className={styles.navbarContainer}>
       <Logo />
       <div className={styles.navbarLinks}>{links}</div>
       <div className={styles.hamburger} onClick={toggleNavMenu}>
-        &#9776;
+        {hamburgerIcon}
       </div>
       {navMenuOpen && (
         <div className={styles.navMenu} onClick={toggleNavMenu}>
-          <div className={styles.close}>&times;</div>
           {links}
         </div>
       )}
