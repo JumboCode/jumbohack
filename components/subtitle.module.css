@@ -14,15 +14,15 @@
 }
 
 #lang {
-  color: #8ecc2b;
+  color: rgb(172, 153, 220);
 }
 
 #love {
-  color: #ffd233;
+  color: var(--color-jumbocode-green);
 }
 
 .tags {
-  color: #f21f6d;
+  color: var(--color-pink);
 }
 
 .htmlTags {
