@@ -14,21 +14,15 @@
 }
 
 #lang {
-  /* color: var(--color-jumbocode-green); */
   color: rgb(172, 153, 220);
 }
 
 #love {
-  /* color: #fae391; */
-  /* color: #ffd233; */
-  /* color: var(--color-red); */
   color: var(--color-jumbocode-green);
 }
 
 .tags {
-  /* color: var(--color-red); */
   color: var(--color-pink);
-  /* color: #f21f6d; */
 }
 
 .htmlTags {
