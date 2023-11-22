@@ -30,7 +30,7 @@ export default function Title() {
         .deleteChars(word.length);
     });
     typewriter.start();
-  });
+  }, []);
 
   return (
     <div className={typeStyles.heading}>
