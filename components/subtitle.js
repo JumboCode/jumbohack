@@ -8,7 +8,7 @@ export default function Subtitle() {
         <h3>Tufts University</h3>
       </div>
       <div className={styles.application}>
-        <a href="https://forms.gle/Q2rVTUSmYRNWgq636" target="_blank">
+        <a href="https://forms.gle/syRYeE12tt5qGaES6" target="_blank">
           <button className={styles.apply}>Apply</button>
         </a>
       </div>
