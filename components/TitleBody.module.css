@@ -1,0 +1,21 @@
+.container {
+    white-space: pre-wrap;
+    /* Text styling */
+    font-family: var(--font-sans);
+    min-width: 90vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+/* .title {
+    white-space: pre-wrap
+}
+
+.body {
+    white-space: pre-wrap
+} */
