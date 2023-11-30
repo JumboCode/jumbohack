@@ -7,6 +7,7 @@ import TitleBody from "@/components/TitleBody";
 import Title from "@/components/title";
 import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
+import { HTMLTags } from "@/components/Decor";
 import { useState } from "react";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
     "Dearest student hackers,",
     "JumboHack is not your average hackathon",
     "We've got a mission. We want to make hackathons truly fun and enjoyable. Hackathons are a way to show off your skills, whether that's coding, problem-solving, or project management. They're not just a way to build your resume.",
-    "Join us on February 13, 2023 in the Joyce Cummings Center at Tufts University for a weekend of fun, hanging out with great people, and building something awesome. Let's hack love!",
+    "Join us on February 17, 2023 in the Joyce Cummings Center at Tufts University for a weekend of fun, hanging out with great people, and building something awesome. Let's hack love!",
     "With love,\nJumboHack Organization Team",
   ];
 
@@ -29,19 +30,13 @@ export default function Home() {
     <main className={styles.main} onScroll={doScroll}>
       <Navbar />
       <div className={styles.contentPadding}>
+        <Background offset={backgroundOffset} />
         <Title />
         <Subtitle />
         <Countdown />
-        <Background offset={backgroundOffset} />
-        <Image
-          src="/jumbohack_full.svg"
-          alt="JumboHack Logo"
-          width={400}
-          height={96}
-        />
-        <p>Welcome to JumboHack, nerds</p>
         <TitleBody
           title="A Hackathon made with love..."
+          titleId="about"
           body={letterbody}
           imagepath="/love-letter.png"
           imagewidth={200}
@@ -49,10 +44,12 @@ export default function Home() {
         />
         <TitleBody
           title="Project Tracks"
+          titleId="tracks"
           body={[
-            "We've got a few project tracks to guide eyour ideas and help you make something awesome",
+            "We've got a few project tracks to guide your ideas and help you make something awesome",
           ]}
         />
+        <HTMLTags />
       </div>
     </main>
   );
