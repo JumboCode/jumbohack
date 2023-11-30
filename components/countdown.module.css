@@ -1,0 +1,42 @@
+.timerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 0;
+  gap: 64px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.counter {
+  width: 25%;
+}
+
+.Number {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.Text {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+  .Number {
+    font-size: 12vw;
+  }
+
+  .Text {
+    font-size: 4vw;
+  }
+
+  .graphic {
+    display: none;
+  }
+}

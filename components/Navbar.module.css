@@ -5,6 +5,7 @@
   min-height: 100px;
   width: 100%;
   padding: 0 64px;
+  z-index: 1000;
 
   /* Content layout */
   display: flex;
@@ -40,6 +41,7 @@
   display: none;
   font-size: 32px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .navMenu {
@@ -59,27 +61,13 @@
 
   /* Blue background */
   backdrop-filter: blur(16px);
-
-  .close {
-    /* Position and dimensions */
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 32px;
-    height: 32px;
-
-    /* Content layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Text styling */
-    font-size: 32px;
-    cursor: pointer;
-  }
 }
 
 @media (max-width: 600px) {
+  .navbarContainer {
+    padding: 0 32px;
+    min-height: 80px;
+  }
   .navbarLinks {
     display: none !important;
   }
