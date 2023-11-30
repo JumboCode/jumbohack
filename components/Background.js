@@ -1,4 +1,3 @@
-"use client";
 import styles from "./Background.module.css";
 
 const BACKGROUND_TEXT =
@@ -16,20 +15,12 @@ const BACKGROUND_TEXT =
       1      \
 ";
 
-export default function Background({ offset }) {
+export default function Background() {
   const backgroundText = BACKGROUND_TEXT.split("\n").map((line, i) => (
     <pre key={i} className={styles.backgroundLine}>
       {line}
     </pre>
   ));
 
-  const translateStyle = {
-    transform: `translateY(${-0.2 * offset}px)`,
-  };
-
-  return (
-    <div className={styles.background} style={translateStyle}>
-      {backgroundText}
-    </div>
-  );
+  return <div className={styles.background}>{backgroundText}</div>;
 }

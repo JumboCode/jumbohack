@@ -3,7 +3,7 @@ import styles from "./Logo.module.css";
 
 export default function Logo() {
   return (
-    <a href="#" className={styles.logoContainer}>
+    <a href="#home" className={styles.logoContainer}>
       <Image
         src="/jumbocode_icon.svg"
         alt="JumboCode Icon"
