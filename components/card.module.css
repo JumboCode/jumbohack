@@ -1,24 +1,17 @@
 .cardWrapper{
     display: flex;
-    /*background-color: aqua;*/
     flex-direction: column;
     height: 30vw;
     width: 20vw;
     position: relative;
     border-radius: 10px;
-    border: 5px solid red;
-    background-color: color-white;
-}
-
-.top{
-    /*background-color: red;*/
-    display: flex;
-    flex-direction: row;
-    height: 10%;
+    background-color: var(--color-white);
+    font-family: var(--font-jumbocode);
 }
 
 .topNumber{
-    /*background-color: yellow;*/
+    display: flex;
+    height: 10%;
     text-align: center;
     vertical-align: middle;
 }
@@ -28,39 +21,70 @@
     font-size: 3vw;
 }
 
-.title{
-    /*background-color: orange;*/
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
+.topSuit{
+    background-color: pink;
+    display: flex;
+    height: 10%;
+}
+
+.topImg{
+    background-color: brown;
+    width: 20%;
+    height: 100%;
+    background-image: url('../images/heart.webp');
+    background-size: 50px;
 }
 
 .middle{
-    /*background-color: green;*/
-    display: flex;
-    flex-direction: row;
-    height: 80%;
-    justify-content: space-between;
-}
-
-.left{
-    /*background-color: pink;*/
+    background-color: green;
+    height: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
-    width: 40%;
+    flex-direction: column;
 }
 
-.leftImg
+.middleText
 {
-    position:absolute;
-    left:0;
-    top:0;
+    text-align: center;
+    overflow: wrap;
+    font-size: 2vw;
 }
 
+.bottomSuit{
+    background-color: hotpink;
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+
+.bottomImg
+{
+    margin-left: auto;
+    margin-right: 0;
+    background-color: lawngreen;
+    width: 20%;
+    height: 100%;
+    background-image: url('../images/heart.webp');
+    background-size: 50px;
+}
+
+.bottomNumber{
+    display: flex;
+    height: 10%;
+    position: relative;
+}
+
+.bottomNumberText
+{
+    font-size: 3vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*
 .middleMiddle{
-    /*background-color: purple;*/
     overflow: wrap;
     font-size: 2vw;
     text-align: center;
@@ -68,7 +92,6 @@
 }
 
 .right{
-    /*background-color: brown;*/
     display: flex;
     justify-content: center;
     position: relative;
@@ -83,7 +106,6 @@
 }
 
 .bottom{
-    /*background-color: blue;*/
     height:10%;
     text-align: right; 
 }
@@ -94,4 +116,4 @@
     position: absolute;
     bottom: 0;
     right: 0;
-}
+} */
