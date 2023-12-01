@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./page.module.css";
 import Countdown from "@/components/countdown";
 import Navbar from "@/components/Navbar";
@@ -8,16 +6,8 @@ import Title from "@/components/title";
 import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
-import { useState } from "react";
 
 export default function Home() {
-  const [backgroundOffset, setBackgroundOffset] = useState(0);
-
-  const doScroll = (event) => {
-    const scrollTop = event.target.scrollTop;
-    setBackgroundOffset(scrollTop);
-  };
-
   let letterbody = [
     "Dearest student hackers,",
     "JumboHack is not your average hackathon",
@@ -27,30 +17,32 @@ export default function Home() {
   ];
 
   return (
-    <main className={styles.main} onScroll={doScroll}>
-      <Navbar />
-      <div className={styles.contentPadding}>
-        <Background offset={backgroundOffset} />
-        <Title />
-        <Subtitle />
-        <Countdown />
-        <TitleBody
-          title="A Hackathon made with love..."
-          titleId="about"
-          body={letterbody}
-          imagepath="/love-letter.png"
-          imagewidth={200}
-          imageheight={200}
-        />
-        <TitleBody
-          title="Project Tracks"
-          titleId="tracks"
-          body={[
-            "We've got a few project tracks to guide your ideas and help you make something awesome",
-          ]}
-        />
-        <HTMLTags />
-      </div>
-    </main>
+    <>
+      <Background />
+      <main className={styles.main}>
+        <Navbar />
+        <div className={styles.contentPadding}>
+          <Title />
+          <Subtitle />
+          <Countdown />
+          <TitleBody
+            title="A Hackathon made with love..."
+            titleId="about"
+            body={letterbody}
+            imagepath="/love-letter.png"
+            imagewidth={200}
+            imageheight={200}
+          />
+          <TitleBody
+            title="Project Tracks"
+            titleId="tracks"
+            body={[
+              "We've got a few project tracks to guide your ideas and help you make something awesome",
+            ]}
+          />
+          <HTMLTags />
+        </div>
+      </main>
+    </>
   );
 }

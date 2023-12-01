@@ -76,9 +76,21 @@ body {
   max-width: 100vw;
 }
 
+html {
+  /* Disables scrolling on html element, instead we want body to scroll */
+  /* Done for the parallax background */
+  overflow-y: auto;
+}
+
 body {
   color: var(--color-readable);
   background: rgb(var(--color-background-rgb));
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /* Enables parallax background */
+  perspective: 1px;
 }
 
 a {
