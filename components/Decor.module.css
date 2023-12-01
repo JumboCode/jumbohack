@@ -1,0 +1,32 @@
+#lang {
+  color: rgb(172, 153, 220);
+}
+
+#love {
+  color: var(--color-jumbocode-green);
+}
+
+.tags {
+  color: var(--color-pink);
+}
+
+.htmlTags {
+  width: 100%;
+  font-size: 30px;
+  margin: 64px 0;
+  font-family: var(--font-mono);
+}
+
+.indent {
+  padding-left: 36px;
+}
+
+@media (max-width: 600px) {
+  .htmlTags {
+    font-size: 18px;
+  }
+
+  .indent {
+    padding-left: 21px;
+  }
+}
