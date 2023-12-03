@@ -6,11 +6,11 @@ import Image from 'next/image'
 import heart from "../images/heart.webp"
 
 
-export default function Countdown(props) {
+export default function Card(props) {
 
   return ( 
     <div>
-      <div className={styles.cardWrapper}>
+      <div role={"button"} onClick={() => console.log("Button clicked!")} className={styles.cardWrapper}>
         <div className={styles.topNumber}>
           <h1 className={styles.topNumberText}>{props.cardNum}</h1>
         </div>

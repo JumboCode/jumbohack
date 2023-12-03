@@ -1,3 +1,7 @@
+/* all:hover{
+    background-color: yellow;
+} */
+
 .cardWrapper{
     display: flex;
     flex-direction: column;
@@ -7,6 +11,12 @@
     border-radius: 10px;
     background-color: var(--color-white);
     font-family: var(--font-jumbocode);
+}
+
+.cardWrapper:hover{
+    border-style: solid;
+    border-width: .8vw;
+    border-color: var(--color-pink);
 }
 
 .topNumber{
@@ -24,7 +34,7 @@
 .topSuit{
     background-color: pink;
     display: flex;
-    height: 10%;
+    height: 12%;
 }
 
 .topImg{
@@ -32,12 +42,12 @@
     width: 20%;
     height: 100%;
     background-image: url('../images/heart.webp');
-    background-size: 50px;
+    background-size: 4vw;
 }
 
 .middle{
     background-color: green;
-    height: 60%;
+    height: 56%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -54,7 +64,7 @@
 .bottomSuit{
     background-color: hotpink;
     display: flex;
-    height: 10%;
+    height: 12%;
     width: 100%;
 }
 
@@ -66,7 +76,7 @@
     width: 20%;
     height: 100%;
     background-image: url('../images/heart.webp');
-    background-size: 50px;
+    background-size: 4vw;
 }
 
 .bottomNumber{
