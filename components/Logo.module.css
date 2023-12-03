@@ -11,4 +11,7 @@
   .colored {
     color: var(--color-jumbocode-green);
   }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }

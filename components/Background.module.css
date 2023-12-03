@@ -13,7 +13,7 @@
   flex-direction: column;
   gap: 100px;
 
-  font-family: Andale Mono;
+  font-family: var(--font-mono);
   color: var(--color-red);
   opacity: 0.25;
 
@@ -44,8 +44,6 @@
 
   .fillText {
     font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
 
     padding: 0 40px;
 
