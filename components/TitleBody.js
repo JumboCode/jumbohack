@@ -32,10 +32,8 @@ export default function TitleBody({
   );
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title} id={titleId}>
-        {title}
-      </h1>
+    <div className={styles.container} id={titleId}>
+      <h1 className={styles.title}>{title}</h1>
       <div className={styles.row}>
         {bodyComponent}
         {imagepath && (

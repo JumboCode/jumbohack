@@ -42,6 +42,7 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar />
         <div className={styles.contentPadding}>
+          <div id="home" /* For #home url fragment */ />
           <Title />
           <Subtitle />
           <TitleBody body={hookBody} />

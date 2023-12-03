@@ -1,3 +1,4 @@
+import { applyUrl } from "@/app/config";
 import styles from "./subtitle.module.css";
 
 export default function Subtitle() {
@@ -8,7 +9,7 @@ export default function Subtitle() {
         <h3>Tufts University</h3>
       </div>
       <div className={styles.application}>
-        <a href="https://forms.gle/syRYeE12tt5qGaES6" target="_blank">
+        <a href={applyUrl} target="_blank">
           <button className={styles.apply}>Apply</button>
         </a>
       </div>
