@@ -11,24 +11,33 @@ export default function TitleBody({
   title,
   titleId,
   body,
+  subtitles,
   imagepath,
   imagewidth,
   imageheight,
 }) {
+  const bodyComponent = body && (
+    <div className={styles.body}>
+      {body.map((paragraph, i) => (
+        <>
+          {subtitles && subtitles[i] && (
+            <h2 key={2 * i} className={styles.subtitle}>
+              {subtitles[i]}
+            </h2>
+          )}
+          <p key={2 * i + 1}>{paragraph}</p>
+        </>
+      ))}
+    </div>
+  );
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title} id={titleId}>
         {title}
       </h1>
-      {/* not sure if newlining is consistent, should just add gap to css */}
       <div className={styles.row}>
-        <div className={styles.body}>
-          {body.map((paragraph, i) => (
-            <div key={i}>
-              <p>{paragraph}</p> {/* look at inserting newlines */}
-            </div>
-          ))}
-        </div>
+        {bodyComponent}
         {imagepath && (
           <Image
             src={imagepath}

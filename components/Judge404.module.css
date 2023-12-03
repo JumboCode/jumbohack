@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+
+  .statusCode {
+    font-size: 100px;
+    color: var(--color-red);
+  }
+
+  .statusMessage {
+    font-size: 40px;
+    color: var(--color-red);
+  }
+
+  .subtext {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    .statusCode {
+      font-size: 24vw;
+    }
+
+    .statusMessage {
+      font-size: 6vw;
+    }
+
+    .subtext {
+      font-size: 12px;
+    }
+  }
+}

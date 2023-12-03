@@ -14,6 +14,14 @@
     color: var(--color-pink);
   }
 
+  .subtitle {
+    font-family: var(--font-jumbocode);
+    font-size: 30px;
+    color: var(--color-pink);
+    font-style: italic;
+    padding-top: 10px;
+  }
+
   .row {
     display: flex;
     flex-direction: row;
@@ -22,9 +30,20 @@
     font-size: 20px;
   }
 
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
   @media (max-width: 800px) {
     .title {
       font-size: 30px;
+    }
+
+    .subtitle {
+      font-size: 20px;
     }
 
     .row {

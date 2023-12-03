@@ -11,20 +11,46 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 100px;
 
-  .backgroundLine {
-    font-family: Andale Mono;
-    font-size: 70px;
-    letter-spacing: 45px;
-    color: var(--color-red);
-    opacity: 0.25;
+  font-family: Andale Mono;
+  color: var(--color-red);
+  opacity: 0.25;
+
+  /* Make text un-highlight-able */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+
+  .heart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .backgroundLine {
+      font-size: 70px;
+      letter-spacing: 45px;
+    }
+
+    @media (max-width: 1024px) {
+      .backgroundLine {
+        font-size: 6vw;
+        letter-spacing: 3.8vw;
+      }
+    }
   }
 
-  @media (max-width: 1024px) {
-    .backgroundLine {
-      font-size: 6vw;
-      letter-spacing: 3.8vw;
+  .fillText {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+
+    padding: 0 40px;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
     }
   }
 }
