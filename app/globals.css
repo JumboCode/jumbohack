@@ -57,13 +57,13 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: light) {
-  /* This is a stub, will implement proper light mode if we have time */
+/* @media (prefers-color-scheme: light) {
+  /* This is a stub, will implement proper light mode if we have time
   :root {
     --color-readable: #000000;
     --color-background-rgb: 255, 255, 255;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
