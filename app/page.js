@@ -20,8 +20,21 @@ export default function Home() {
     "We'll be in the Joyce Cummings Center (@ Tufts University) on February 17th/18th, 2024 - can't wait to see you there ;)",
     "With love,\nThe JumboHack Team",
   ];
+  const trackSubtitles = [
+    null,
+    "Racial Justice Advocacy",
+    "Environmentalism",
+    "Education",
+    "Political Awareness",
+    "General",
+  ];
   const trackBody = [
     "We've got a few project tracks to guide your ideas and help make something awesome. Ace that hack!",
+    "This track is for projects that aim to promote racial equity and combat racism in various domains such as health, education, criminal justice, and media. You can use data analysis, machine learning, web development, or any other tools to create solutions that address the challenges and opportunities of racial justice advocacy.",
+    "This track is for projects that aim to protect the environment and mitigate the effects of climate change. You can use sensors, IoT, blockchain, or any other tools to create solutions that monitor, reduce, or offset the environmental impact of human activities.",
+    "This track is for projects that aim to improve the quality and accessibility of education for learners of all ages and backgrounds. You can use gamification, VR/AR, AI, or any other tools to create solutions that enhance the learning experience, outcomes, and opportunities of education.",
+    "This track is for projects that aim to increase the political awareness and engagement of citizens and communities. You can use social media, data visualization, NLP, or any other tools to create solutions that inform, persuade, or mobilize people on political issues and causes.",
+    "This track is for projects that do not fit into any of the above categories, but still have a positive social impact. You can use any tools or technologies to create solutions that address any problem or need that you are passionate about. Here's a little inspo: food insecurity, youth/homeless/elderly advocacy, LGBT advocacy, accessibility, connecting with community.",
   ];
   const judgingBody = [
     "404: Judges not found",
@@ -55,7 +68,12 @@ export default function Home() {
             imagewidth={200}
             imageheight={200}
           />
-          <TitleBody title="Project Tracks" titleId="tracks" body={trackBody} />
+          <TitleBody
+            title="Project Tracks"
+            titleId="tracks"
+            subtitles={trackSubtitles}
+            body={trackBody}
+          />
           <TitleBody title="Judges" titleId="judges" />
           <Judge404 />
           <TitleBody
