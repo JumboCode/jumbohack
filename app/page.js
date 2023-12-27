@@ -7,6 +7,23 @@ import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
+import { datadogRum } from '@datadog/browser-rum';
+
+datadogRum.init({
+    applicationId: '66f0680a-55df-4ff3-bd28-b3401cf83679',
+    clientToken: 'pubbc7a697b2335ac3b450bcaf33baceeba',
+    site: 'datadoghq.eu',
+    service: 'jumbohack',
+    env: 'prod',
+    // Specify a version number to identify the deployed version of your application in Datadog 
+    // version: '1.0.0', 
+    sessionSampleRate: 100,
+    sessionReplaySampleRate: 100,
+    trackUserInteractions: true,
+    trackResources: true,
+    trackLongTasks: true,
+    defaultPrivacyLevel: 'mask-user-input',
+});
 
 export default function Home() {
   const hookBody = [
