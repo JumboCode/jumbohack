@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import DatadogInit from "@/components/datadog-init";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -23,7 +24,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <DatadogInit /> {/* so it runs in a client component */}
+        {children}
+      </body>
     </html>
   );
 }
