@@ -7,7 +7,7 @@ import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
-
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   const hookBody = [
@@ -49,6 +49,9 @@ export default function Home() {
     "No sleeping over on the first date - we'll be shutting down at 10 on Saturday so you can get your beauty sleep",
     "10AM-10PM on Saturday and 10AM-7PM on Sunday. More details to come :))",
   ];
+  const scheduleBody = [
+    "Our event is held in the Joyce Cummings Center (JCC) building at Tufts University, aka the love mansion. Each team will be assigned a different room during hack times.",
+  ];
 
   return (
     <>
@@ -83,6 +86,12 @@ export default function Home() {
             subtitles={logisticsSubtitles}
             body={logisticsBody}
           />
+          <TitleBody
+            title="Hack Weekend Schedule"
+            titleId="schedule"
+            body={scheduleBody}
+          />
+          <Schedule />
           <HTMLTags />
         </div>
       </main>
