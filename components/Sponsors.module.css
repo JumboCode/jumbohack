@@ -1,0 +1,54 @@
+.container {
+  --color-gold: #f4ed9c;
+  --color-silver: #c3c3c3;
+  --color-bronze: #864b39;
+  --color-background-dark: #262626;
+  --color-background-light: #626262;
+
+  /* Should be the same as coinSize in Sponsors.js */
+  --coin-size: 94px;
+  --half-coin-size: calc(var(--coin-size) / 2);
+
+  --padding: 32px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 32px;
+  row-gap: 100px;
+  width: 100%;
+
+  margin-top: calc(var(--half-coin-size) + 32px);
+}
+
+.gold {
+  border: solid 3px var(--color-gold);
+  color: var(--color-gold);
+  background-color: var(--color-background-light);
+}
+
+.silver {
+  border: solid 3px var(--color-silver);
+  color: var(--color-silver);
+  background-color: var(--color-background-dark);
+}
+
+.bronze {
+  border: solid 3px var(--color-bronze);
+  color: var(--color-bronze);
+  background-color: var(--color-background-dark);
+}
+
+.sponsorList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: calc(-1 * var(--half-coin-size) - var(--padding));
+  padding: var(--padding);
+}
+
+.sponsorList h2 {
+  color: inherit;
+  font-style: normal;
+}

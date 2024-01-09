@@ -7,6 +7,7 @@ import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -140,6 +141,15 @@ export default function Home() {
               :))
             </p>
           </TitleBody>
+          <TitleBody title="Sponsors" titleId="sponsors">
+            <p>
+              JumboHack 2024 is powered by the generous support of our sponsors.
+              If you're interested in joining us, email us at{" "}
+              <a href="mailto:sponsor@jumbohack.org">sponsor@jumbohack.org</a>!
+              We'd love to hear from you.
+            </p>
+          </TitleBody>
+          <Sponsors />
           <HTMLTags />
         </div>
       </main>
