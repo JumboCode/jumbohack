@@ -34,10 +34,8 @@ export default function Title() {
 
   return (
     <div className={typeStyles.heading}>
-      <h1>
-        Jumbo
-        <span id="typed" className={typeStyles.typed} />
-      </h1>
+      Jumbo
+      <span id="typed" className={typeStyles.typed} />
     </div>
   );
 }
