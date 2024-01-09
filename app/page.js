@@ -29,15 +29,6 @@ export default function Home() {
               <i>open to all college students in the Greater Boston area</i>
             </p>
           </TitleBody>
-          <TitleBody title="Sponsors" titleId="sponsors">
-            <p>
-              JumboHack 2024 is powered by the generous support of our sponsors.
-              If you're interested in joining us, email us at{" "}
-              <a href="mailto:sponsor@jumbohack.org">sponsor@jumbohack.org</a>!
-              We'd love to hear from you.
-            </p>
-          </TitleBody>
-          <Sponsors />
           <Countdown />
           <TitleBody
             title="A Hackathon made with love..."
@@ -150,6 +141,15 @@ export default function Home() {
               come :))
             </p>
           </TitleBody>
+          <TitleBody title="Sponsors" titleId="sponsors">
+            <p>
+              JumboHack 2024 is powered by the generous support of our sponsors.
+              If you're interested in joining us, email us at{" "}
+              <a href="mailto:sponsor@jumbohack.org">sponsor@jumbohack.org</a>!
+              We'd love to hear from you.
+            </p>
+          </TitleBody>
+          <Sponsors />
           <HTMLTags />
         </div>
       </main>
