@@ -114,31 +114,31 @@ export default function Home() {
           <Judge404 />
           <TitleBody title="Logistics" titleId="logistics">
             <p>
-              "We're planning on hosting a bunch of events alongside the work
-              you do on your project. We'll be working with other clubs on
-              campus to host workshops, cultural events, and have some food to
-              keep you hacking. Check back later for more info!
+              We're planning on hosting a bunch of events alongside the work you
+              do on your project. We'll be working with other clubs on campus to
+              host workshops, cultural events, and have some food to keep you
+              hacking. Check back later for more info!
             </p>
             <h2>Food</h2>
             <p>
-              "What's a date without some (free) food? We'll have lunch and
+              What's a date without some (free) food? We'll have lunch and
               dinner on Saturday and lunch on Sunday
             </p>
             <h2>Travel</h2>
             <p>
-              "How to spot a baddie 101: they use public transportation. We're
+              How to spot a baddie 101: they use public transportation. We're
               right next to the Medford/Tufts stop on the Green Line, and a 20
               minute walk from Davis on the Red Line
             </p>
             <h2>Sleeping</h2>
             <p>
-              "No sleeping over on the first date - we'll be shutting down at 10
+              No sleeping over on the first date - we'll be shutting down at 10
               on Saturday so you can get your beauty sleep
             </p>
             <h2>Schedule</h2>
             <p>
-              "10AM-10PM on Saturday and 10AM-7PM on Sunday. More details to
-              come :))
+              10AM-10PM on Saturday and 10AM-7PM on Sunday. More details to come
+              :))
             </p>
           </TitleBody>
           <TitleBody title="Sponsors" titleId="sponsors">
