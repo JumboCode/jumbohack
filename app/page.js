@@ -32,8 +32,9 @@ export default function Home() {
           <TitleBody title="Sponsors" titleId="sponsors">
             <p>
               JumboHack 2024 is powered by the generous support of our sponsors.
-              If you're interested in joining us, email us at
-              sponsor@jumbohack.org! We'd love to hear from you.
+              If you're interested in joining us, email us at{" "}
+              <a href="mailto:sponsor@jumbohack.org">sponsor@jumbohack.org</a>!
+              We'd love to hear from you.
             </p>
           </TitleBody>
           <Sponsors />
