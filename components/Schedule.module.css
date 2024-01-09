@@ -8,29 +8,38 @@
   font-family: var(--font-mono);
 
   /* Controls where the border gradient starts and ends */
-  --gradient-start: 15%;
-  --gradient-end: 85%;
+  --stop-1: 20%;
+  --stop-2: 25%;
+  --stop-3: 40%;
+  --stop-4: calc(100% - var(--stop-3));
+  --stop-5: calc(100% - var(--stop-2));
+  --stop-6: calc(100% - var(--stop-1));
+
   /* Controls central gradient color */
-  --gradient-color: rgba(255, 255, 255, 0.9);
+  --gradient-color-1: color(srgb 0.1255 0.1255 0.1255);
+  --gradient-color-2: color(srgb 0.3333 0.3333 0.3333);
+  --gradient-color-3: color(srgb 0.5255 0.5255 0.5255);
+
+  --gradient: transparent 0%, transparent var(--stop-1),
+    var(--gradient-color-1) var(--stop-1), var(--gradient-color-1) var(--stop-2),
+    var(--gradient-color-2) var(--stop-2), var(--gradient-color-2) var(--stop-3),
+    var(--gradient-color-3) var(--stop-3), var(--gradient-color-3) var(--stop-4),
+    var(--gradient-color-2) var(--stop-4), var(--gradient-color-2) var(--stop-5),
+    var(--gradient-color-1) var(--stop-5), var(--gradient-color-1) var(--stop-6),
+    transparent var(--stop-6), transparent 100%;
 }
 
 .borderWide {
   grid-column: 1 / -1;
-  background-image: linear-gradient(
-    to right,
-    transparent var(--gradient-start),
-    var(--gradient-color) 50%,
-    transparent var(--gradient-end)
-  );
+  background-image: linear-gradient(to right, var(--gradient));
 }
 
 .borderTall {
-  background-image: linear-gradient(
-    to bottom,
-    transparent var(--gradient-start),
-    var(--gradient-color) 50%,
-    transparent var(--gradient-end)
-  );
+  background-image: linear-gradient(to bottom, var(--gradient));
+}
+
+.borderDivider {
+  background-image: linear-gradient(to bottom, var(--gradient));
 }
 
 .content {
@@ -39,27 +48,13 @@
   grid-gap: 32px;
 }
 
-.borderDivider {
-  background-image: linear-gradient(
-    to bottom,
-    transparent var(--gradient-start),
-    var(--gradient-color) 50%,
-    transparent var(--gradient-end)
-  );
-}
-
 @media (max-width: 800px) {
   .content {
     grid-template-columns: unset;
     grid-template-rows: auto 16px auto;
   }
   .borderDivider {
-    background-image: linear-gradient(
-      to right,
-      transparent var(--gradient-start),
-      var(--gradient-color) 50%,
-      transparent var(--gradient-end)
-    );
+    background-image: linear-gradient(to right, var(--gradient));
   }
 }
 
