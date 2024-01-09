@@ -1,52 +1,18 @@
 .container {
   padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  white-space: pre-wrap;
   width: 100%;
 
-  .title {
-    font-family: var(--font-jumbocode);
-    font-size: 40px;
-    color: var(--color-pink);
-  }
-
-  .subtitle {
-    font-family: var(--font-jumbocode);
-    font-size: 30px;
-    color: var(--color-pink);
-    font-style: italic;
-    padding-top: 10px;
-  }
-
-  .row {
+  .content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
-    font-size: 20px;
-  }
-
-  .body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 24px;
     width: 100%;
   }
 
   @media (max-width: 800px) {
-    .title {
-      font-size: 30px;
-    }
-
-    .subtitle {
-      font-size: 20px;
-    }
-
-    .row {
+    .content {
       flex-direction: column-reverse;
-      gap: 0;
     }
   }
 }

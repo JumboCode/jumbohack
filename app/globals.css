@@ -103,3 +103,24 @@ a {
     color-scheme: dark;
   }
 }
+
+h1,
+h2 {
+  font-family: var(--font-jumbocode);
+  color: var(--color-pink);
+  padding-top: 12px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+p {
+  font-size: 20px;
+  padding: 8px 0;
+}

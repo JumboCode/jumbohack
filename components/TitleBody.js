@@ -8,34 +8,18 @@ import styles from "./TitleBody.module.css";
  *   imagepath: path to an image to be displayed alongisde the body
  */
 export default function TitleBody({
+  children,
   title,
   titleId,
-  body,
-  subtitles,
   imagepath,
   imagewidth,
   imageheight,
 }) {
-  const bodyComponent = body && (
-    <div className={styles.body}>
-      {body.map((paragraph, i) => (
-        <>
-          {subtitles && subtitles[i] && (
-            <h2 key={2 * i} className={styles.subtitle}>
-              {subtitles[i]}
-            </h2>
-          )}
-          <p key={2 * i + 1}>{paragraph}</p>
-        </>
-      ))}
-    </div>
-  );
-
   return (
     <div className={styles.container} id={titleId}>
-      <h1 className={styles.title}>{title}</h1>
-      <div className={styles.row}>
-        {bodyComponent}
+      {title && <h1>{title}</h1>}
+      <div className={styles.content}>
+        <div>{children}</div>
         {imagepath && (
           <Image
             src={imagepath}
