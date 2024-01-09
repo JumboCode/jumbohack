@@ -7,7 +7,7 @@ import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
-
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   const hookBody = [
@@ -49,6 +49,9 @@ export default function Home() {
     "No sleeping over on the first date - we'll be shutting down at 10 on Saturday so you can get your beauty sleep",
     "10AM-10PM on Saturday and 10AM-7PM on Sunday. More details to come :))",
   ];
+  const sponsorBody = [
+    "JumboHack 2024 is powered by the generous support of our sponsors. If you're interested in joining us, email us at sponsor@jumbohack.org! We'd love to hear from you.",
+  ];
 
   return (
     <>
@@ -59,6 +62,8 @@ export default function Home() {
         <div className={styles.contentPadding}>
           <Title />
           <Subtitle />
+          <TitleBody title="Sponsors" titleId="sponsors" body={sponsorBody} />
+          <Sponsors />
           <TitleBody body={hookBody} />
           <Countdown />
           <TitleBody
