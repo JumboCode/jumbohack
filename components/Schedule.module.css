@@ -72,7 +72,9 @@
 
 .schedule h2 {
   font-size: 25px;
+  color: inherit;
   text-decoration: underline;
+  font-style: normal;
   text-align: center;
 }
 
