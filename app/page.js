@@ -141,7 +141,7 @@ export default function Home() {
               :))
             </p>
           </TitleBody>
-          <TitleBody title="Hack Weekend Schedule" titleId="schedule">
+          <TitleBody title="Schedule" titleId="schedule">
             <p>
               Our event is held in the{" "}
               <b>

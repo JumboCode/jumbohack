@@ -66,7 +66,6 @@
   .row {
     display: flex;
     flex-direction: column;
-    gap: 12px;
   }
 }
 
@@ -78,6 +77,22 @@
   text-align: center;
 }
 
-.schedule h3 span {
+.schedule h3 .pink {
   color: var(--color-pink);
+}
+
+.keynoteColor {
+  color: var(--color-jumbocode-green);
+}
+
+.foodColor {
+  /* color: #ac99dc; */
+}
+
+.talkColor {
+  color: #ac99dc;
+}
+
+.workshopColor {
+  color: #fbd471;
 }
