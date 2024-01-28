@@ -7,6 +7,7 @@ import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   return (
@@ -140,6 +141,17 @@ export default function Home() {
               :))
             </p>
           </TitleBody>
+          <TitleBody title="Schedule" titleId="schedule">
+            <p>
+              Our event is held in the{" "}
+              <b>
+                Joyce Cummings Center (JCC) building at Tufts University, aka
+                the love mansion
+              </b>
+              . Each team will be assigned a different room during hack times.
+            </p>
+          </TitleBody>
+          <Schedule />
           <HTMLTags />
         </div>
       </main>
