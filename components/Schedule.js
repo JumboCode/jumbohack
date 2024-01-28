@@ -14,9 +14,9 @@ export default function Schedule() {
   return (
     <div className={styles.container}>
       <div className={styles.borderWide} />
-      <div className={styles.borderTall} />
 
       <div className={styles.content}>
+        <div className={styles.borderDivider} />
         <div className={styles.schedule}>
           <h2>DAY 1: SATURDAY 02/17</h2>
           {makeRow(
@@ -68,9 +68,9 @@ export default function Schedule() {
             styles.keynoteColor
           )}
         </div>
+        <div className={styles.borderDivider} />
       </div>
 
-      <div className={styles.borderTall} />
       <div className={styles.borderWide} />
     </div>
   );
