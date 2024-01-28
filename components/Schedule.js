@@ -21,12 +21,12 @@ export default function Schedule() {
           <h2>DAY 1: SATURDAY 02/17</h2>
           {makeRow(
             "10AM-11AM",
-            "WELCOME CEREMONY",
+            "Welcome Ceremony",
             "@JCC Ballrooms (160, 170, 180)",
             styles.keynoteColor
           )}
           {makeRow("11AM-12PM", "CIVIC Talk", "@JCC 270", styles.talkColor)}
-          {makeRow("12PM-1:30PM", "LUNCH", "@JCC Lobby", styles.foodColor)}
+          {makeRow("12PM-1:30PM", "Lunch", "@JCC TBD", styles.foodColor)}
           {makeRow(
             "1:30PM-2:30PM",
             "Figma Workshop (Product Studio)",
@@ -35,7 +35,7 @@ export default function Schedule() {
           )}
           {makeRow("4PM-4:30PM", "Lydia Yu Talk", "@JCC 270", styles.talkColor)}
           {makeRow("5PM", "BEATs", "@surprise ;)")}
-          {makeRow("5:30PM-7PM", "DINNER", "@JCC Lobby", styles.foodColor)}
+          {makeRow("5:30PM-7PM", "Dinner", "@JCC TBD", styles.foodColor)}
           {makeRow(
             "7PM-8PM",
             "SQL Workshop (BSCS)",
@@ -50,19 +50,19 @@ export default function Schedule() {
           <h2>DAY 2: SUNDAY 02/18</h2>
           {makeRow(
             "11AM-12PM",
-            "Malawi Education and Environment Talk (EWB)",
+            "Malawi Education & Environment Talk (EWB)",
             "@JCC 270",
             styles.talkColor
           )}
-          {makeRow("12PM-1:30PM", "LUNCH", "@JCC Lobby", styles.foodColor)}
+          {makeRow("12PM-1:30PM", "Lunch", "@JCC TBD", styles.foodColor)}
           {makeRow(
-            "5PM-7PM",
+            "5PM-6PM",
             "Judging",
             "@JCC Ballrooms (160, 170, 180)",
             styles.keynoteColor
           )}
           {makeRow(
-            "7PM-8PM",
+            "6PM-7PM",
             "Closing Ceremony",
             "@JCC Ballrooms (160, 170, 180)",
             styles.keynoteColor
