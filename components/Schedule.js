@@ -29,11 +29,22 @@ export default function Schedule() {
           {makeRow("12PM-1:30PM", "Lunch", "@JCC TBD", styles.foodColor)}
           {makeRow(
             "1:30PM-2:30PM",
-            "Figma Workshop (Product Studio)",
+            "Figma Workshop",
             "@JCC 270",
             styles.workshopColor
           )}
-          {makeRow("4PM-4:30PM", "Lydia Yu Talk", "@JCC 270", styles.talkColor)}
+          {makeRow(
+            "2:30PM-3:30PM",
+            "Terminal Survival Skills (TUGSLUG)",
+            "@JCC 270",
+            styles.workshopColor
+          )}
+          {makeRow(
+            "4PM-4:30PM",
+            "Generative AI Talk (Lydia Yu)",
+            "@JCC 270",
+            styles.talkColor
+          )}
           {makeRow("5PM", "BEATs", "@surprise ;)")}
           {makeRow("5:30PM-7PM", "Dinner", "@JCC TBD", styles.foodColor)}
           {makeRow(
@@ -49,12 +60,24 @@ export default function Schedule() {
         <div className={styles.schedule}>
           <h2>DAY 2: SUNDAY 02/18</h2>
           {makeRow(
+            "10AM-11AM",
+            "Git Workshop (Ben Borgers)",
+            "@JCC 270",
+            styles.workshopColor
+          )}
+          {makeRow(
             "11AM-12PM",
             "Malawi Education & Environment Talk (EWB)",
             "@JCC 270",
             styles.talkColor
           )}
           {makeRow("12PM-1:30PM", "Lunch", "@JCC TBD", styles.foodColor)}
+          {makeRow(
+            "1:30PM-2PM",
+            "What College Doesn't Teach You — Frontend (Becca Miller)",
+            "@JCC 270",
+            styles.workshopColor
+          )}
           {makeRow(
             "5PM-6PM",
             "Judging",
