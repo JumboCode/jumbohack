@@ -13,8 +13,6 @@ export default function Countdown() {
   const target = new Date("2/17/2024 10:00:00");
 
   function updateCounter() {
-    console.log("updating");
-
     const now = new Date();
     const difference = target.getTime() - now.getTime();
 
