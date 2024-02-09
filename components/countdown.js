@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "./countdown.module.css";
 
 export default function Countdown() {
-  const [partyTime, setPartyTime] = useState(false);
+  const [partyTime, setPartyTime] = useState(true);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -36,6 +36,8 @@ export default function Countdown() {
 
     if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
       setPartyTime(true);
+    } else {
+      setPartyTime(false);
     }
   }
 
@@ -45,13 +47,9 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-  //   function CountdownOrMessage({ isPartyTime }) {
-  //     if (isPartyTime) {
-  //       return <h1>HACKATHON TIME!!!!</h1>;
-  //     }
-  //     else {}
-  //   }
-  //<CountdownOrMessage isPartyTime={partyTime}/>
+  if (partyTime) {
+    return null;
+  }
 
   return (
     <div className={styles.timerWrapper}>
