@@ -146,9 +146,8 @@ export default function Home() {
               Our event is held in the{" "}
               <b>
                 Joyce Cummings Center (JCC) building at Tufts University, aka
-                the love mansion
+                the love mansion.
               </b>
-              . Each team will be assigned a different room during hack times.
             </p>
           </TitleBody>
           <Schedule />
