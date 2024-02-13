@@ -43,7 +43,7 @@ export default function Schedule() {
           {makeRow(
             "2:30PM-3:30PM",
             "Terminal Survival Skills (TUGSLUG)",
-            "@JCC 270",
+            "@JCC 140",
             styles.workshopColor
           )}
           {makeRow("3PM-3:30PM", "Low-Keys")}
@@ -63,7 +63,7 @@ export default function Schedule() {
           {makeRow(
             "7PM-8PM",
             "SQL Workshop (BSCS)",
-            "@JCC 270",
+            "@JCC 140",
             styles.workshopColor
           )}
           {makeRow(
@@ -88,7 +88,7 @@ export default function Schedule() {
           {makeRow(
             "11AM-12PM",
             "Malawi Education & Environment Talk (EWB)",
-            "@JCC 270",
+            "@JCC 140",
             styles.talkColor
           )}
           {makeRow(
@@ -106,7 +106,7 @@ export default function Schedule() {
           {makeRow(
             "2PM-2:30PM",
             "Racial Justice Advocacy Talk (Kristin Austin)",
-            "@JCC 270",
+            "@JCC 140",
             styles.talkColor
           )}
           {makeRow(
