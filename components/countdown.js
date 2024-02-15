@@ -35,6 +35,9 @@ export default function Countdown() {
   }
 
   useEffect(() => {
+    if (target.getTime() - new Date().getTime() <= 0) {
+      return;
+    }
     const interval = setInterval(updateCounter, 1000);
     updateCounter();
     return () => clearInterval(interval);
