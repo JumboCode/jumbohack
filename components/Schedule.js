@@ -36,7 +36,7 @@ export default function Schedule() {
           )}
           {makeRow(
             "1:30PM-2:30PM",
-            "Figma Workshop",
+            "Figma Workshop (Andy Xu & Kitty Vu)",
             "@JCC 270",
             styles.workshopColor
           )}
