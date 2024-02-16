@@ -51,7 +51,7 @@ export default function Schedule() {
             "@JCC 140",
             styles.workshopColor
           )}
-          {makeRow("3PM-3:30PM", "Low-Keys")}
+          {makeRow("3PM-3:30PM", "Low-Keys", "@JCC Ballrooms (160, 170, 180)")}
           {makeRow(
             "4PM-4:30PM",
             "Generative AI Talk (Lydia Yu)",
