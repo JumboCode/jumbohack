@@ -26,7 +26,12 @@ export default function Schedule() {
             "@JCC Ballrooms (160, 170, 180)",
             styles.keynoteColor
           )}
-          {makeRow("11AM-12PM", "CIVIC Talk", "@JCC 270", styles.talkColor)}
+          {makeRow(
+            "11AM-12PM",
+            "Navigating AI, Cyber Law, and the Political Landscape (CIVIC)",
+            "@JCC 270",
+            styles.talkColor
+          )}
           {makeRow("11AM-12PM", "Team Formation", "@JCC 260")}
           {makeRow(
             "12PM-1:30PM",
@@ -64,12 +69,6 @@ export default function Schedule() {
             "7PM-8PM",
             "SQL Workshop (BSCS)",
             "@JCC 140",
-            styles.workshopColor
-          )}
-          {makeRow(
-            "10:30PM-11:30PM",
-            "AI Workshop (AI Society)",
-            "@JCC 270",
             styles.workshopColor
           )}
         </div>
