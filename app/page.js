@@ -113,7 +113,6 @@ export default function Home() {
           </TitleBody>
           <TitleBody title="Judges" titleId="judges" />
           <Judges />
-          <Judge404 />
           <TitleBody title="Logistics" titleId="logistics">
             <p>
               We're planning on hosting a bunch of events alongside the work you

@@ -1,30 +1,42 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./Judges.module.css";
 import { useState } from "react";
+import JudgeCard from "./JudgeCard";
 
 export default function Judges() {
   const judgeStacks = [
     {
       trackName: "Racial Justice Advocacy",
-      judges: ["/love-letter.png", "/love-letter.png", "/love-letter.png"],
+      judges: [
+        // Unassigned alums
+        <JudgeCard name="Ben London" description="JumboCode Alum" />,
+        <JudgeCard name="Denzel Oduro" description="JumboCode Alum" />,
+        <JudgeCard name="Becca Miller" description="JumboCode Alum" />,
+        <JudgeCard name="Jackson Parsells" description="JumboCode Alum" />,
+        <JudgeCard name="Vicky Zhang" description="JumboCode Alum" />,
+        // Unassigned professors
+        <JudgeCard name="Dave Lillethun" description="Tufts CS Professor" />,
+        <JudgeCard name="Megan Monroe" description="Tufts CS Professor" />,
+        <JudgeCard name="Karen Edwards" description="Tufts CS Professor" />,
+        <JudgeCard name="Milod Kazerounian" description="Tufts CS Professor" />,
+      ],
     },
     {
       trackName: "Environmentalism",
-      judges: ["/love-letter.png", "/love-letter.png", "/love-letter.png"],
+      judges: [],
     },
     {
       trackName: "Education",
-      judges: ["/love-letter.png", "/love-letter.png", "/love-letter.png"],
+      judges: [],
     },
     {
       trackName: "Political Awareness",
-      judges: ["/love-letter.png", "/love-letter.png", "/love-letter.png"],
+      judges: [],
     },
     {
       trackName: "General",
-      judges: ["/love-letter.png", "/love-letter.png", "/love-letter.png"],
+      judges: [],
     },
   ];
   const [stackStates, setStackStates] = useState(judgeStacks.map(() => false));
@@ -50,9 +62,9 @@ export default function Judges() {
                 stackStates[i] ? styles.judgeStack : styles.judgeStackCompressed
               }
             >
-              {stack.judges.map((image, i) => (
+              {stack.judges.map((judge, i) => (
                 <div className={styles.judgeCard} key={i}>
-                  <Image src={image} width={256} height={256} />
+                  {judge}
                 </div>
               ))}
             </div>
