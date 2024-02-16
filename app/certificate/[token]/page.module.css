@@ -1,0 +1,132 @@
+.container {
+  position: relative;
+
+  .footer {
+    width: 100%;
+    height: 32px;
+    background-color: var(--color-red);
+  }
+
+  .mainContent {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 130px;
+    color: #222222;
+
+    .logo {
+      position: absolute;
+      top: 64px;
+      left: 64px;
+    }
+
+    .title {
+      font-size: 41px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      margin-top: 72px;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: white;
+      font-size: 22px;
+      background-color: var(--color-pink);
+      padding: 4px 48px;
+      border-radius: 32px;
+      letter-spacing: 6px;
+      margin-bottom: 24px;
+    }
+
+    .description {
+      font-size: 15px;
+      text-align: center;
+      margin: 0 32px;
+      margin-bottom: 32px;
+    }
+
+    .description span {
+      color: var(--color-red);
+    }
+
+    .bigName {
+      font-family: SignPainter;
+      color: var(--color-red);
+      font-size: 72px;
+      margin-bottom: 8px;
+    }
+
+    .wideLine {
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-red);
+      margin-bottom: 16px;
+    }
+
+    .bottomContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 24px;
+      padding-bottom: 48px;
+    }
+
+    .signature {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .signatureName {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .signaturePosition span {
+      font-weight: bold;
+    }
+
+    .rightDecor {
+      font-size: 50px;
+      font-family: var(--font-mono);
+      letter-spacing: 8px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--color-red);
+      text-align: right;
+    }
+
+    .leftDecor {
+      font-size: 50px;
+      font-family: var(--font-mono);
+      letter-spacing: 8px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: var(--color-pink);
+      text-align: left;
+    }
+
+    @media (max-width: 800px) {
+      padding: 0 24px;
+
+      .bottomContainer img {
+        display: none;
+      }
+
+      .leftDecor,
+      .rightDecor {
+        display: none;
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+  }
+}

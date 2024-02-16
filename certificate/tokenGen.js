@@ -3,14 +3,23 @@ const crypto = require("crypto");
 
 const people = [
   {
-    name: "Alice",
     email: "alice@mail.com",
-    cert: "Best Hacker",
+    name: "Alice",
+    type: "award winner",
+    track: "Education",
+    criteria: "Creativity",
   },
   {
-    name: "Bob",
     email: "bob@mail.com",
-    cert: "Best Hair",
+    name: "Bob",
+    type: "award winner",
+    track: "Environmentalism",
+    criteria: "Imapact",
+  },
+  {
+    email: "eve@mail.com",
+    name: "Eve",
+    type: "certificate",
   },
 ];
 
@@ -24,8 +33,8 @@ function generateTokens() {
     console.log("Private key not found, please run keyGen.js first");
     return;
   }
-  const namesCerts = people.map(({ name, email, cert }) => {
-    const value = `jumbohack:${name}:${cert}`;
+  const namesCerts = people.map(({ email, name, type, track, criteria }) => {
+    const value = `${type}:${name}:${track}:${criteria}`;
     const token = crypto
       .privateEncrypt(privateKey, Buffer.from(value))
       .toString("base64");
