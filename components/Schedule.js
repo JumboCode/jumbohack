@@ -36,7 +36,7 @@ export default function Schedule() {
           {makeRow(
             "12PM-1:30PM",
             "Lunch",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 3rd Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
@@ -62,7 +62,7 @@ export default function Schedule() {
           {makeRow(
             "5:30PM-7PM",
             "Dinner",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 3rd Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
@@ -93,7 +93,7 @@ export default function Schedule() {
           {makeRow(
             "12PM-1:30PM",
             "Lunch",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 4th Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
@@ -108,6 +108,7 @@ export default function Schedule() {
             "@JCC 140",
             styles.talkColor
           )}
+          {makeRow("4:30PM", "Project Submission Deadline")}
           {makeRow(
             "5PM-6PM",
             "Judging",
