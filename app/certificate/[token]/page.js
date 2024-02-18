@@ -43,9 +43,9 @@ export default async function Certificate(props) {
           <div className={styles.bigName}>{name}</div>
           <div className={styles.wideLine} />
           <div className={styles.description}>
-            for achieving excellence in {criteria.toLowerCase()} in the {track}{" "}
-            track during <span>JumboHack</span>, hosted by JumboCode of Tufts
-            University on February 17-18, 2024
+            for achieving excellence in <span>{criteria.toLowerCase()}</span> in
+            the {track} track during <span>JumboHack</span>, hosted by JumboCode
+            of Tufts University on February 17-18, 2024
           </div>
           <div className={styles.bottomContainer}>
             <div className={styles.signature}>
