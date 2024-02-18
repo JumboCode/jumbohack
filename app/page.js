@@ -8,6 +8,7 @@ import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
 import Judge404 from "@/components/Judge404";
 import Schedule from "@/components/Schedule";
+import CountdownSubmission from "@/components/countdownSubmission";
 
 export default function Home() {
   return (
@@ -30,6 +31,14 @@ export default function Home() {
             </p>
           </TitleBody>
           <Countdown />
+          <TitleBody title="Submit Your Project">
+            <p>
+              <a href="https://jumbohack-2024.devpost.com/" target="_blank">
+                Click here to submit your project!
+              </a>
+            </p>
+          </TitleBody>
+          <CountdownSubmission />
           <TitleBody
             title="A Hackathon made with love..."
             titleId="about"

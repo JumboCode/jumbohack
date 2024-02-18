@@ -109,6 +109,9 @@ export default function Schedule() {
             styles.talkColor
           )}
           {makeRow("4:30PM", "Project Submission Deadline")}
+          <a href="https://jumbohack-2024.devpost.com/" target="_blank">
+            Click here to submit your project!
+          </a>
           {makeRow(
             "5PM-6PM",
             "Judging",
