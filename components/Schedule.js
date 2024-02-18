@@ -26,27 +26,32 @@ export default function Schedule() {
             "@JCC Ballrooms (160, 170, 180)",
             styles.keynoteColor
           )}
-          {makeRow("11AM-12PM", "CIVIC Talk", "@JCC 270", styles.talkColor)}
+          {makeRow(
+            "11AM-12PM",
+            "Navigating AI, Cyber Law, and the Political Landscape (CIVIC)",
+            "@JCC 270",
+            styles.talkColor
+          )}
           {makeRow("11AM-12PM", "Team Formation", "@JCC 260")}
           {makeRow(
             "12PM-1:30PM",
             "Lunch",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 3rd Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
             "1:30PM-2:30PM",
-            "Figma Workshop",
+            "Figma Workshop (Andy Xu & Kitty Vu)",
             "@JCC 270",
             styles.workshopColor
           )}
           {makeRow(
             "2:30PM-3:30PM",
             "Terminal Survival Skills (TUGSLUG)",
-            "@JCC 270",
+            "@JCC 140",
             styles.workshopColor
           )}
-          {makeRow("3PM-3:30PM", "Low-Keys")}
+          {makeRow("3PM-3:30PM", "Low-Keys", "@JCC Ballrooms (160, 170, 180)")}
           {makeRow(
             "4PM-4:30PM",
             "Generative AI Talk (Lydia Yu)",
@@ -57,19 +62,13 @@ export default function Schedule() {
           {makeRow(
             "5:30PM-7PM",
             "Dinner",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 3rd Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
             "7PM-8PM",
             "SQL Workshop (BSCS)",
-            "@JCC 270",
-            styles.workshopColor
-          )}
-          {makeRow(
-            "10:30PM-11:30PM",
-            "AI Workshop (AI Society)",
-            "@JCC 270",
+            "@JCC 140",
             styles.workshopColor
           )}
         </div>
@@ -88,13 +87,13 @@ export default function Schedule() {
           {makeRow(
             "11AM-12PM",
             "Malawi Education & Environment Talk (EWB)",
-            "@JCC 270",
+            "@JCC 140",
             styles.talkColor
           )}
           {makeRow(
             "12PM-1:30PM",
             "Lunch",
-            "@JCC 3rd and 4th Floors",
+            "@JCC 4th Floor Kitchenette",
             styles.foodColor
           )}
           {makeRow(
@@ -106,9 +105,10 @@ export default function Schedule() {
           {makeRow(
             "2PM-2:30PM",
             "Racial Justice Advocacy Talk (Kristin Austin)",
-            "@JCC 270",
+            "@JCC 140",
             styles.talkColor
           )}
+          {makeRow("4:30PM", "Project Submission Deadline")}
           {makeRow(
             "5PM-6PM",
             "Judging",
