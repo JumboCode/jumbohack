@@ -70,6 +70,7 @@
     .bottomContainer {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 16px;
       margin-top: 24px;
@@ -112,10 +113,18 @@
       text-align: left;
     }
 
+    .signatureRow {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
     @media (max-width: 800px) {
       padding: 0 24px;
 
-      .bottomContainer img {
+      .bottomContainer .awardImage {
         display: none;
       }
 

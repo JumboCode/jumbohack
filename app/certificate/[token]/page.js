@@ -6,6 +6,12 @@ import styles from "./page.module.css";
 import AwardImage from "@/images/award_icon.png";
 import LogoImage from "@/images/jumbohack-black.png";
 import Image from "next/image";
+import SignatureTyler from "@/images/signature_tyler.png";
+import SignatureLucas from "@/images/signature_lucas.png";
+import SignatureHolden from "@/images/signature_holden.png";
+import SignatureLillian from "@/images/signature_lillian.png";
+import SignatureDilanur from "@/images/signature_dilanur.png";
+import SignatureMina from "@/images/signature_mina.png";
 
 const publicKey = `-----BEGIN RSA PUBLIC KEY-----
 MIGJAoGBALpEJRFwojUhIoWvQcGqqsBIushz2iW/3YG4crBYSlALnDi6oZqz6H42
@@ -49,6 +55,7 @@ export default async function Certificate(props) {
           </div>
           <div className={styles.bottomContainer}>
             <div className={styles.signature}>
+              <Image src={SignatureLucas} width="200" />
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>Lucas Maley</div>
               <div className={styles.signaturePosition}>
@@ -57,8 +64,9 @@ export default async function Certificate(props) {
                 <span>JumboCode</span>
               </div>
             </div>
-            <Image src={AwardImage} width="150" />
+            <Image className={styles.awardImage} src={AwardImage} width="150" />
             <div className={styles.signature}>
+              <Image src={SignatureTyler} width="200" />
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>Tyler Thompson</div>
               <div className={styles.signaturePosition}>
@@ -70,6 +78,12 @@ export default async function Certificate(props) {
           </div>
           <div className={styles.bottomContainer}>
             <div className={styles.signature}>
+              <div className={styles.signatureRow}>
+                <Image src={SignatureHolden} width="300" />
+                <Image src={SignatureLillian} width="150" />
+                <Image src={SignatureDilanur} width="200" />
+                <Image src={SignatureMina} width="150" />
+              </div>
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>The JumboHack Team</div>
             </div>
@@ -128,6 +142,7 @@ export default async function Certificate(props) {
           </div>
           <div className={styles.bottomContainer}>
             <div className={styles.signature}>
+              <Image src={SignatureLucas} width="200" />
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>Lucas Maley</div>
               <div className={styles.signaturePosition}>
@@ -136,8 +151,9 @@ export default async function Certificate(props) {
                 <span>JumboCode</span>
               </div>
             </div>
-            <Image src={AwardImage} width="150" />
+            <Image className={styles.awardImage} src={AwardImage} width="150" />
             <div className={styles.signature}>
+              <Image src={SignatureTyler} width="200" />
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>Tyler Thompson</div>
               <div className={styles.signaturePosition}>
@@ -149,6 +165,12 @@ export default async function Certificate(props) {
           </div>
           <div className={styles.bottomContainer}>
             <div className={styles.signature}>
+              <div className={styles.signatureRow}>
+                <Image src={SignatureHolden} width="300" />
+                <Image src={SignatureLillian} width="150" />
+                <Image src={SignatureDilanur} width="200" />
+                <Image src={SignatureMina} width="150" />
+              </div>
               <div className={styles.wideLine} />
               <div className={styles.signatureName}>The JumboHack Team</div>
             </div>
