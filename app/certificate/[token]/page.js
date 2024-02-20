@@ -34,92 +34,156 @@ export default async function Certificate(props) {
   } catch {
     return notFound();
   }
-  const [type, name, track, criteria] = decrypted.split(":");
+  const [type, name, description] = decrypted.split(":");
 
-  if (type === "award winner") {
+  const signatures = (
+    <>
+      <div className={styles.bottomContainer}>
+        <div className={styles.signature}>
+          <Image src={SignatureLucas} width="200" />
+          <div className={styles.wideLine} />
+          <div className={styles.signatureName}>Lucas Maley</div>
+          <div className={styles.signaturePosition}>
+            President,
+            <br />
+            <span>JumboCode</span>
+          </div>
+        </div>
+        <Image className={styles.awardImage} src={AwardImage} width="150" />
+        <div className={styles.signature}>
+          <Image src={SignatureTyler} width="200" />
+          <div className={styles.wideLine} />
+          <div className={styles.signatureName}>Tyler Thompson</div>
+          <div className={styles.signaturePosition}>
+            Vice President,
+            <br />
+            <span>JumboCode</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottomContainer}>
+        <div className={styles.signature}>
+          <div className={styles.signatureRow}>
+            <Image src={SignatureHolden} width="300" />
+            <Image src={SignatureLillian} width="150" />
+            <Image src={SignatureDilanur} width="200" />
+            <Image src={SignatureMina} width="150" />
+          </div>
+          <div className={styles.wideLine} />
+          <div className={styles.signatureName}>The JumboHack Team</div>
+        </div>
+      </div>
+    </>
+  );
+
+  const decor = (
+    <>
+      <pre className={styles.rightDecor}>
+        0<br />
+        10
+        <br />
+        000
+        <br />
+        000
+        <br />
+        111
+        <br />
+        010
+        <br />
+        00
+        <br />0
+      </pre>
+      <pre className={styles.leftDecor}>
+        0<br />
+        10
+        <br />
+        011
+        <br />
+        110
+        <br />
+        110
+        <br />
+        000
+        <br />
+        01
+        <br />1
+      </pre>
+    </>
+  );
+
+  const footer = <div className={styles.footer} />;
+
+  if (type === "track winner") {
     return (
       <div className={styles.container}>
         <div className={styles.mainContent}>
           <Image className={styles.logo} src={LogoImage} width="100" />
-          <div className={styles.title}>AWARD WINNER</div>
-          <div className={styles.subtitle}>{track.toUpperCase()}</div>
+          <div className={styles.title}>TRACK WINNER</div>
+          <div className={styles.subtitle}>{description.toUpperCase()}</div>
           <div className={styles.description}>
             This Certificate is awarded to
           </div>
           <div className={styles.bigName}>{name}</div>
           <div className={styles.wideLine} />
           <div className={styles.description}>
-            for achieving excellence in <span>{criteria.toLowerCase()}</span> in
-            the {track} track during <span>JumboHack</span>, hosted by JumboCode
-            of Tufts University on February 17-18, 2024
+            for achieving excellence in the{" "}
+            <span>{description.toLowerCase()}</span> track during{" "}
+            <span>JumboHack</span>, hosted by JumboCode of Tufts University on
+            February 17-18, 2024
           </div>
-          <div className={styles.bottomContainer}>
-            <div className={styles.signature}>
-              <Image src={SignatureLucas} width="200" />
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>Lucas Maley</div>
-              <div className={styles.signaturePosition}>
-                President,
-                <br />
-                <span>JumboCode</span>
-              </div>
-            </div>
-            <Image className={styles.awardImage} src={AwardImage} width="150" />
-            <div className={styles.signature}>
-              <Image src={SignatureTyler} width="200" />
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>Tyler Thompson</div>
-              <div className={styles.signaturePosition}>
-                Vice President,
-                <br />
-                <span>JumboCode</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.bottomContainer}>
-            <div className={styles.signature}>
-              <div className={styles.signatureRow}>
-                <Image src={SignatureHolden} width="300" />
-                <Image src={SignatureLillian} width="150" />
-                <Image src={SignatureDilanur} width="200" />
-                <Image src={SignatureMina} width="150" />
-              </div>
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>The JumboHack Team</div>
-            </div>
-          </div>
-          <pre className={styles.rightDecor}>
-            0<br />
-            10
-            <br />
-            000
-            <br />
-            000
-            <br />
-            111
-            <br />
-            010
-            <br />
-            00
-            <br />0
-          </pre>
-          <pre className={styles.leftDecor}>
-            0<br />
-            10
-            <br />
-            011
-            <br />
-            110
-            <br />
-            110
-            <br />
-            000
-            <br />
-            01
-            <br />1
-          </pre>
+          {signatures}
+          {decor}
         </div>
-        <div className={styles.footer} />
+        {footer}
+      </div>
+    );
+  }
+
+  if (type === "criteria winner") {
+    return (
+      <div className={styles.container}>
+        <div className={styles.mainContent}>
+          <Image className={styles.logo} src={LogoImage} width="100" />
+          <div className={styles.title}>CRITERIA WINNER</div>
+          <div className={styles.subtitle}>{description.toUpperCase()}</div>
+          <div className={styles.description}>
+            This Certificate is awarded to
+          </div>
+          <div className={styles.bigName}>{name}</div>
+          <div className={styles.wideLine} />
+          <div className={styles.description}>
+            for achieving unparalleled <span>{description.toLowerCase()}</span>{" "}
+            during <span>JumboHack</span>, hosted by JumboCode of Tufts
+            University on February 17-18, 2024
+          </div>
+          {signatures}
+          {decor}
+        </div>
+        {footer}
+      </div>
+    );
+  }
+
+  if (type === "overall winner") {
+    return (
+      <div className={styles.container}>
+        <div className={styles.mainContent}>
+          <Image className={styles.logo} src={LogoImage} width="100" />
+          <div className={styles.title}>OVERALL WINNER</div>
+          <div className={styles.subtitle}>JUMBOHACK 2024</div>
+          <div className={styles.description}>
+            This Certificate is awarded to
+          </div>
+          <div className={styles.bigName}>{name}</div>
+          <div className={styles.wideLine} />
+          <div className={styles.description}>
+            for creating the best overall project during <span>JumboHack</span>,
+            hosted by JumboCode of Tufts University on February 17-18, 2024
+          </div>
+          {signatures}
+          {decor}
+        </div>
+        {footer}
       </div>
     );
   }
@@ -140,73 +204,10 @@ export default async function Certificate(props) {
             for participating in <span>JumboHack</span>, hosted by JumboCode of
             Tufts University on February 17-18, 2024
           </div>
-          <div className={styles.bottomContainer}>
-            <div className={styles.signature}>
-              <Image src={SignatureLucas} width="200" />
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>Lucas Maley</div>
-              <div className={styles.signaturePosition}>
-                President,
-                <br />
-                <span>JumboCode</span>
-              </div>
-            </div>
-            <Image className={styles.awardImage} src={AwardImage} width="150" />
-            <div className={styles.signature}>
-              <Image src={SignatureTyler} width="200" />
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>Tyler Thompson</div>
-              <div className={styles.signaturePosition}>
-                Vice President,
-                <br />
-                <span>JumboCode</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.bottomContainer}>
-            <div className={styles.signature}>
-              <div className={styles.signatureRow}>
-                <Image src={SignatureHolden} width="300" />
-                <Image src={SignatureLillian} width="150" />
-                <Image src={SignatureDilanur} width="200" />
-                <Image src={SignatureMina} width="150" />
-              </div>
-              <div className={styles.wideLine} />
-              <div className={styles.signatureName}>The JumboHack Team</div>
-            </div>
-          </div>
-          <pre className={styles.rightDecor}>
-            0<br />
-            10
-            <br />
-            000
-            <br />
-            000
-            <br />
-            111
-            <br />
-            010
-            <br />
-            00
-            <br />0
-          </pre>
-          <pre className={styles.leftDecor}>
-            0<br />
-            10
-            <br />
-            011
-            <br />
-            110
-            <br />
-            110
-            <br />
-            000
-            <br />
-            01
-            <br />1
-          </pre>
+          {signatures}
+          {decor}
         </div>
-        <div className={styles.footer} />
+        {footer}
       </div>
     );
   }
