@@ -20,8 +20,14 @@ moUzdZn5h9as7WdObzU6OzsQaYGxh2ZHGBk8Jg4uCEpwjwxrsbnBAgMBAAE=
 -----END RSA PUBLIC KEY-----
 `;
 // Takes an encrypted token from the URL and decrypts it using the public key above
-// Tokens are expected to decrypt to a string in the format "jumbohack:{name}:{certificate title}"
-// The name and certificate title are then displayed on the page
+// The resulting information is used to generate a certificate
+// Tokens are expected to decrypt to a string in the format "{certificate type}:{name}:{certificate description}"
+// The certificate type should be one of the following:
+// - "certificate": A certificate of participation
+// - "track winner": A winner of a specific track
+// - "criteria winner": A winner of a specific criteria
+// - "overall winner": The overall winner of the hackathon
+// For track winner and criteria winner, the certificate description should be the name of the track or criteria
 // Is this all secure? Who knows. Does it matter? Not really. Is this overkill for a simple certificate page? Absolutely.
 export default async function Certificate(props) {
   const token = decodeURIComponent(props.params.token);
@@ -113,6 +119,7 @@ export default async function Certificate(props) {
 
   const footer = <div className={styles.footer} />;
 
+  // Render the certificate based on the type
   if (type === "track winner") {
     return (
       <div className={styles.container}>
@@ -212,5 +219,6 @@ export default async function Certificate(props) {
     );
   }
 
+  // If we've gotten here, then the token had some invalid type
   return notFound();
 }

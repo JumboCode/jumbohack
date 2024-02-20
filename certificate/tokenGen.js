@@ -1,6 +1,7 @@
 const fs = require("fs");
 const crypto = require("crypto");
 
+// JumboHack 2024 certificate bearers
 const people = [
   {
     name: "Avtar Rekhi",
@@ -518,6 +519,10 @@ const people = [
 // const host = "http://localhost:3000";
 const host = "https://jumbohack.vercel.app";
 
+// Generates certificate tokens for each person listed in the `people` array
+// The tokens are encrypted with the private key, then saved to a file called `tokens.txt`
+// It is assumed that there is a private key file called `id_rsa_priv.pem` in the same directory
+// as this script. A key pair can be generated using the `keyGen.js` script
 function generateTokens() {
   let privateKey;
   try {
