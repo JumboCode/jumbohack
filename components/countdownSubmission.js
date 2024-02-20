@@ -43,32 +43,45 @@ export default function CountdownSubmission() {
     return () => clearInterval(interval);
   }, []);
 
+  if (target.getTime() - new Date().getTime() <= 0) {
+    return null;
+  }
+
   const daysLabel = days === 1 ? "day" : "days";
   const hoursLabel = hours === 1 ? "hour" : "hours";
   const minutesLabel = minutes === 1 ? "minute" : "minutes";
   const secondsLabel = seconds === 1 ? "second" : "seconds";
 
   return (
-    <div className={styles.timerWrapper}>
-      <img src="/hourglass.gif" className={styles.graphic} />
-      <div className={styles.countdown}>
-        <div className={styles.counter}>
-          <div className={styles.Number}>{days}</div>
-          <div className={styles.Text}>{daysLabel}</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.Number}>{hours}</div>
-          <div className={styles.Text}>{hoursLabel}</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.Number}>{minutes}</div>
-          <div className={styles.Text}>{minutesLabel}</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.Number}>{seconds}</div>
-          <div className={styles.Text}>{secondsLabel}</div>
+    <>
+      <TitleBody title="Submit Your Project">
+        <p>
+          <a href="https://jumbohack-2024.devpost.com/" target="_blank">
+            Click here to submit your project!
+          </a>
+        </p>
+      </TitleBody>
+      <div className={styles.timerWrapper}>
+        <img src="/hourglass.gif" className={styles.graphic} />
+        <div className={styles.countdown}>
+          <div className={styles.counter}>
+            <div className={styles.Number}>{days}</div>
+            <div className={styles.Text}>{daysLabel}</div>
+          </div>
+          <div className={styles.counter}>
+            <div className={styles.Number}>{hours}</div>
+            <div className={styles.Text}>{hoursLabel}</div>
+          </div>
+          <div className={styles.counter}>
+            <div className={styles.Number}>{minutes}</div>
+            <div className={styles.Text}>{minutesLabel}</div>
+          </div>
+          <div className={styles.counter}>
+            <div className={styles.Number}>{seconds}</div>
+            <div className={styles.Text}>{secondsLabel}</div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -30,14 +30,18 @@ export default function Home() {
               <i>open to all college students in the Greater Boston area</i>
             </p>
           </TitleBody>
-          <Countdown />
-          <TitleBody title="Submit Your Project">
+          <TitleBody title="The Hackathon Has Ended">
             <p>
+              Thanks for coming to JumboHack 2024! We hope you had a great time
+              and learned a lot. Please find the winners and their projects{" "}
               <a href="https://jumbohack-2024.devpost.com/" target="_blank">
-                Click here to submit your project!
+                here
               </a>
+              . We hope to see you next year! Stay tuned for more information
+              about <b>JumboHack 2025</b>.
             </p>
           </TitleBody>
+          <Countdown />
           <CountdownSubmission />
           <TitleBody
             title="A Hackathon made with love..."

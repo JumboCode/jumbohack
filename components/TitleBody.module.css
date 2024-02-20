@@ -16,3 +16,8 @@
     }
   }
 }
+
+.container a {
+  color: var(--color-pink);
+  text-decoration: underline;
+}
