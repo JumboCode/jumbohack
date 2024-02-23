@@ -399,6 +399,18 @@ const people = [
     description: "innovation",
   },
   {
+    name: "Fa Taepaisitphongse",
+    email: "chompoonik.taepaisitphongse@tufts.edu",
+    type: "track winner",
+    description: "education",
+  },
+  {
+    name: "Fa Taepaisitphongse",
+    email: "chompoonik.taepaisitphongse@tufts.edu",
+    type: "criteria winner",
+    description: "innovation",
+  },
+  {
     name: "Jack Zhang",
     email: "jack.zhang@tufts.edu",
     type: "track winner",
