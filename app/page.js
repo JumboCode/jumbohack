@@ -6,9 +6,9 @@ import Title from "@/components/title";
 import Subtitle from "@/components/subtitle";
 import Background from "@/components/Background";
 import { HTMLTags } from "@/components/Decor";
-import Judge404 from "@/components/Judge404";
 import Schedule from "@/components/Schedule";
 import CountdownSubmission from "@/components/countdownSubmission";
+import Judges from "@/components/Judges";
 
 export default function Home() {
   return (
@@ -124,7 +124,7 @@ export default function Home() {
             </p>
           </TitleBody>
           <TitleBody title="Judges" titleId="judges" />
-          <Judge404 />
+          <Judges />
           <TitleBody title="Logistics" titleId="logistics">
             <p>
               We're planning on hosting a bunch of events alongside the work you
