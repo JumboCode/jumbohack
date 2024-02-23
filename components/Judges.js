@@ -3,40 +3,50 @@
 import styles from "./Judges.module.css";
 import { useState } from "react";
 import JudgeCard from "./JudgeCard";
+import beccaCard from "@/images/becca.svg";
+import benCard from "@/images/ben.svg";
+import denzelCard from "@/images/denzel.svg";
+import jacksonCard from "@/images/jackson.svg";
+import vickyCard from "@/images/vicky.svg";
+import daveCard from "@/images/dave.svg";
+import meganCard from "@/images/megan.svg";
+import karenCard from "@/images/karen.svg";
+import milodCard from "@/images/milod.svg";
 
 export default function Judges() {
   const judgeStacks = [
     {
-      trackName: "Racial Justice Advocacy",
+      trackName: "Environmentalism",
       judges: [
-        // Unassigned alums
-        <JudgeCard name="Ben London" description="JumboCode Alum" />,
-        <JudgeCard name="Denzel Oduro" description="JumboCode Alum" />,
-        <JudgeCard name="Becca Miller" description="JumboCode Alum" />,
-        <JudgeCard name="Jackson Parsells" description="JumboCode Alum" />,
-        <JudgeCard name="Vicky Zhang" description="JumboCode Alum" />,
-        // Unassigned professors
-        <JudgeCard name="Dave Lillethun" description="Tufts CS Professor" />,
-        <JudgeCard name="Megan Monroe" description="Tufts CS Professor" />,
-        <JudgeCard name="Karen Edwards" description="Tufts CS Professor" />,
-        <JudgeCard name="Milod Kazerounian" description="Tufts CS Professor" />,
+        <JudgeCard image={benCard} />,
+        <JudgeCard image={daveCard} />,
+        <JudgeCard image={vickyCard} />,
+        <JudgeCard image={milodCard} />,
       ],
     },
     {
-      trackName: "Environmentalism",
-      judges: [],
-    },
-    {
       trackName: "Education",
-      judges: [],
+      judges: [
+        <JudgeCard image={jacksonCard} />,
+        <JudgeCard image={karenCard} />,
+      ],
     },
     {
-      trackName: "Political Awareness",
-      judges: [],
+      trackName: "Political Awareness & Racial Justice Advocacy",
+      judges: [
+        <JudgeCard image={benCard} />,
+        <JudgeCard image={daveCard} />,
+        <JudgeCard image={vickyCard} />,
+        <JudgeCard image={milodCard} />,
+      ],
     },
     {
       trackName: "General",
-      judges: [],
+      judges: [
+        <JudgeCard name="Denzel Oduro" image={denzelCard} />,
+        <JudgeCard name="Becca Miller" image={beccaCard} />,
+        <JudgeCard name="Megan Monroe" image={meganCard} />,
+      ],
     },
   ];
   const [stackStates, setStackStates] = useState(judgeStacks.map(() => false));

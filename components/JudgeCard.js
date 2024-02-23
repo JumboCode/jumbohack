@@ -1,12 +1,14 @@
+import Image from "next/image";
 import styles from "./JudgeCard.module.css";
 
-export default function JudgeCard({ name, description }) {
+export default function JudgeCard({ image }) {
   return (
-    <div className={styles.judgeCard}>
-      <h3>{name}</h3>
-      <p>
-        <em>{description}</em>
-      </p>
-    </div>
+    <Image
+      src={image}
+      alt="judge"
+      width={192}
+      height={270}
+      className={styles.judgeCard}
+    />
   );
 }
