@@ -10,7 +10,9 @@ export default function Subtitle() {
       </div>
       <div className={styles.application}>
         <a href={applyUrl} target="_blank">
-          <button className={styles.apply}>Apply</button>
+          <button className={styles.apply}>
+            Apply to Organize JumboHack 2025
+          </button>
         </a>
       </div>
     </div>

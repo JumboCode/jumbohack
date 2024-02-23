@@ -23,11 +23,7 @@ export default function Home() {
           <TitleBody>
             <p>
               The first hackathon at Tufts in the last 5 years, complete with
-              food, workshops, and cultural events. Attendance is capped at 500
-              people, so register now to save your spot :)
-            </p>
-            <p>
-              <i>open to all college students in the Greater Boston area</i>
+              food, workshops, and cultural events.
             </p>
           </TitleBody>
           <TitleBody title="The Hackathon Has Ended">
